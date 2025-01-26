@@ -5,15 +5,13 @@ function App() {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-      fetch("../public/tasks.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTodos(data);
-        console.log(data);
-      })
-      .catch((err) => console.error("Error loading tasks:", err));
+      fetch("/tasks.json")
+        .then((res) => res.json())
+        .then((data) => {
+          setTodos(data);
+        })
+        .catch((err) => console.error("Error loading tasks:", err));
   }, []);
-
 
   // Add a new task
   const addTask = () => {
