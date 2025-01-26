@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "title": "Pray Fajr",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Eat my breakfast",
+      "completed": false
+    },
+    {
+        "id": 3,
+        "title": "Buy groceries",
+        "completed": true
+      },
+      {
+        "id": 4,
+        "title": "Plan weekend trip",
+        "completed": false
+      }
+]
