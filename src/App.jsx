@@ -5,7 +5,7 @@ function App() {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-      fetch("/tasks.json")
+      fetch("./tasks.json")
         .then((res) => res.json())
         .then((data) => {
           setTodos(data);
